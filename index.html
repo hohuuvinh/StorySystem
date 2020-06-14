@@ -15,6 +15,7 @@
     html, body {
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
 
     * {
@@ -36,7 +37,8 @@
 
     .slick-prev:before,
     .slick-next:before {
-      color: black;
+      color: #ffcece;
+
     }
 
 
@@ -67,8 +69,34 @@
 }
   </style>
 </head>
-<body style="overflow-x: hidden; overflow-y: auto;background: #ff631c;">
-
+<body style="background: #ff631c;">
+ <div class="tool_book_box p-2 pl-3 pr-3 shadow-sm" style="width: 100%;height: 60px;background: #fff;position: fixed;margin-top: calc(100vh - 60px);z-index: 9999;">
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 35px;height: 35px;border-radius: 8px;padding-top: 10px;">
+     <img src="img/icon/Icon_home.svg" width="100%" height="100%">
+    </div>
+  </div>
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 35px;height: 35px;border-radius: 8px;padding-top: 10px;margin: auto;padding-left: 0px;">
+      <img src="img/icon/icon_trending.svg" width="100%" height="100%">
+    </div>
+  </div>  
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 45px;height: 45px;border-radius: 8px;padding-top: 10px;margin: auto;padding-left: 2px;">
+      <img src="img/icon/Icon_notification.svg" width="100%" height="85%">
+    </div>
+  </div>
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 35px;height: 35px;border-radius: 8px;padding-top: 10px;margin: auto;padding-left: 7px;">
+      <img src="img/icon/icon_turned.svg" width="100%" height="93%">
+    </div>
+  </div>
+  <div style="width: 20%;float: left;">
+   <div class="tool_function_love float-right" style="width: 38px;height: 38px;border-radius: 8px;padding-top: 10px;">
+     <img src="img/icon/Icon_user_cirlce.svg" width="100%" height="100%">
+    </div>
+  </div>
+  </div>
   <!-- Top menu -->
     
     <div class="container-fluid pt-3 pb-3" style="background: #ff631c;">
@@ -81,8 +109,8 @@
       <div style="clear: both"></div>
 
       <div class="m-0 mt-4">
-              <p class="m-0 text-left" style="color: white;font-size: 110%;">Chào bạn!</p>
-              <p class="m-0 text-left " style="font-size: 130%; color:white">Bạn muốn đọc truyện Hot nào nè?</p>
+              <p class="m-0 text-left" style="color: white;font-size: 120%;">Chào bạn!</p>
+              <p class="m-0 text-left " style="font-size: 140%; color:white">Bạn muốn đọc truyện Hot nào nè?</p>
             </div>
     </div>
 
@@ -334,7 +362,7 @@
   <div class="m-0">
 
       <div style="width: 100%  margin: 0 auto">
-        <p style="width: 33%; float: left; border-bottom-left-radius: 20px; border-top-left-radius: 20px" class="text-center bg-dark text-white p-1">Top ngày</p>
+        <p style="width: 33%; float: left; border-bottom-left-radius: 20px; border-top-left-radius: 20px;background: #ff631c" class="text-center text-white p-1">Top ngày</p>
         <p style="width: 33%; float: left; background: #EEEEEE; border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3" class="text-dark text-center p-1">Top tuần</p>
        <p style="width: 33%; float: left; border-bottom-right-radius: 20px; border-top-right-radius: 20px; background: #EEEEEE" class="text-center text-dark p-1">Top tháng</p>
       </div>
@@ -434,7 +462,7 @@
     </div>
   </div>
 
-<section class="m-0 pb-2">
+<section class="m-0" style="padding-bottom: 70px;">
       <div class="mb-2">
                   <div class="row m-0 text-left shadow-sm" style="border-radius: 8px; width: 100%; height: 125px">
                      <div class="image_book_box" style="width: 30%;">
