@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    p.title_story,p.comment_story{
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+
+}
+
+.tag_box{-webkit-box-orient: vertical;
+    font-size: 1rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    max-height: 52px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    .slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+     
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #ffcece;
+
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+::-webkit-scrollbar-track {
+    
+    background-color: #f8fafd;
+}
+
+@media screen and (min-width:575px){
+  .post_story_box{
+    padding-right: 20px !important;
+  }
+}
+  </style>
+
+</head>
+<body style="background: #ff631c; ">
+ <div class="tool_book_box p-2 pl-3 pr-3 shadow-sm" style="width: 100%;height: 60px;background: #fff;position: fixed;margin-top: calc(100vh - 60px);z-index: 9999;">
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 35px;height: 35px;border-radius: 8px;padding-top: 10px;">
+     <img src="img/icon/Icon_home.svg" width="100%" height="100%">
+    </div>
+  </div>
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 35px;height: 35px;border-radius: 8px;padding-top: 10px;margin: auto;padding-left: 0px;">
+      <img src="img/icon/icon_trending.svg" width="100%" height="100%">
+    </div>
+  </div>  
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 45px;height: 45px;border-radius: 8px;padding-top: 10px;margin: auto;padding-left: 2px;">
+      <img src="img/icon/Icon_notification.svg" width="100%" height="85%">
+    </div>
+  </div>
+  <div style="width: 20%;float: left;">
+    <div class="tool_function_love" style="width: 35px;height: 35px;border-radius: 8px;padding-top: 10px;margin: auto;padding-left: 7px;">
+      <img src="img/icon/icon_turned.svg" width="100%" height="93%">
+    </div>
+  </div>
+  <div style="width: 20%;float: left;">
+   <div class="tool_function_love float-right" style="width: 38px;height: 38px;border-radius: 8px;padding-top: 10px;">
+     <img src="img/icon/Icon_user_cirlce.svg" width="100%" height="100%">
+    </div>
+  </div>
+  </div>
+  <!-- Top menu -->
+    
+    <div class="container-fluid pt-3 pb-3" style="background: #ff631c;">
+      <div class="menu_button" style="float: left;width: 50%">
+        <img src="img/icon/Group 2.svg">
+      </div>
+
+      <div class="menu_button" style="float: right;width: 50%">
+        <img class="float-right" src="img/icon/Group 3.svg">
+      </div>
+
+      <div style="clear: both"></div>
+
+    </div>
+
+    <!-- ----Content----- -->
+
+<div class="container-fluid bg-white" style="padding-top: 0.1px;border-top-left-radius: 20px;">
+             
+
+  <h3 class="text-center mt-5">Đăng Nhập</h3>
+
+  <!-- ---Login with Google, Facebook--- -->
+
+        <div class="mt-3">
+         
+
+              <div class="btn shadow-sm" style="width: 100%; height: 40px; border: 1px solid #EEEEEE ">
+              <img src="img/imgae_login/google.png" class="float-left m-1" width="20px" height="20px">  
+                  <p class="text-center mb-0"> Login in with Google<p>
+              </div>   
+
+          <div style="clear: left"></div>
+
+              <div class="btn shadow-sm  mt-3" style="width: 100%; height: 40px; border: 1px solid #EEEEEE; color: white; background: #3b5998 ">
+              <img src="img/imgae_login/facebook.png" class="float-left mb-2" width="28px" height="28px">  
+                  <p class="text-center mb-0"> Login in with Facebook<p>
+              </div>   
+
+          <div style="clear: left"></div>
+
+
+        </div>
+ 
+  <!-- ---Login with account--- -->
+
+   <div class="mb-4 mt-4">
+     
+    <div class="line float-left mt-2" style="border: 1px solid #EEEEEE; width: 30%"></div>
+    <p class="float-left ml-2 text-center font-weight-bold" style="font-size: 12px; width: 36%; color:  #DDDDDD">OR LOGIN WITH EMAIL</p>
+    <div class="line float-right mt-2" style="border: 1px solid #EEEEEE; width: 30%"></div>
+
+   </div>
+   <div style="clear: both"></div>
+
+   <div class="mt-4" style="height: 400px">
+     
+   
+      <input class="form-control" type="text" name="" placeholder="Your Email">
+      <input class="form-control mt-2" type="password" name="" placeholder="Password">
+      
+      <div class="mt-3 mb-3">
+          <div class="custom-control custom-checkbox float-left">
+            <input type="checkbox" class="custom-control-input" id="defaultInline1">
+            <label class="custom-control-label" for="defaultInline1" style="font-size: 14px">Keep me logged in</label>
+          </div>
+
+          <div class="float-right">
+            <a href="#" style="color: black; font-size: 14px;"><p>Forget password?</p></a>           
+          </div>
+      </div>   
+
+      <div style="clear: left"></div>
+
+      <div class="btn" style="background: #ff631c; color: white; width: 100%">
+        Đăng nhập
+      </div>
+
+
+      <div class="mt-4 text-center" style="width: 100%;">
+
+        <p class="">Don't have an account yet?<a href="" class="ml-1">Sign up</a></p>
+      </div>
+
+      <div style="clear: left"></div>
+   </div>
+
+ 
+
+
+</div><!--  --Thẻ div end-- -->
+
+
+    
+
+ 
+
+
+
+</body>
+</html>
