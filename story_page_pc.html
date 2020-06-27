@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slick Playground</title>
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 	<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body id="scroll_height">
+	<style type="text/css">
+		.menu{
+  /* -webkit-box-shadow: 7px 13px 24px -27px rgba(231,166,26,1);
+-moz-box-shadow: 7px 13px 24px -27px rgba(231,166,26,1);
+box-shadow: 7px 13px 24px -27px rgba(231,166,26,1);*/
+   background: #fff;
+   position: fixed;
+   z-index: 99999;
+   height: 75px;
+}
+.menu nav{ 
+  width: 100%;
+}
+ .menu label.logo{
+  color: black;
+  font-size: 35px;
+  padding: 6px 50px;
+  font-weight: bold;
+  float: left;
+}
+ .menu nav ul{
+  float: left;
+  margin-right: 25px;
+}
+ .menu nav ul li{
+  display: inline-block;
+  margin: 18px 10px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 10px;
+  border-radius: 3px;
+
+}
+	</style>
+<div class="menu_main container-fluid p-0" style="height: 75px;" >
+	<div class="menu" style="width: 100%;">
+    	<nav>
+      		<label class="logo" style="color: #ff631c">LOGO</label>
+		      <ul>		
+
+		      	<li>
+		        	<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Trang chủ
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					    <button class="dropdown-item" type="button">Action</button>
+					    <button class="dropdown-item" type="button">Another action</button>
+					    <button class="dropdown-item" type="button">Something else here</button>
+					  </div>
+					</div>
+		        </li>
+
+		        <li>
+		        	<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   	Thể loại
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					    <button class="dropdown-item" type="button">Action</button>
+					    <button class="dropdown-item" type="button">Another action</button>
+					    <button class="dropdown-item" type="button">Something else here</button>
+					  </div>
+					</div>
+		        </li>
+
+		        <li>
+		        	<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Theo dõi
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					    <button class="dropdown-item" type="button">Action</button>
+					    <button class="dropdown-item" type="button">Another action</button>
+					    <button class="dropdown-item" type="button">Something else here</button>
+					  </div>
+					</div>
+		        </li>
+
+		        <li>
+		        	<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Forum
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					    <button class="dropdown-item" type="button">Action</button>
+					    <button class="dropdown-item" type="button">Another action</button>
+					    <button class="dropdown-item" type="button">Something else here</button>
+					  </div>
+					</div>
+		        </li>
+
+		        <li>
+		        	<div class="dropdown ml-5">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:  #ff631c; color: white; border-radius: 8px">
+					    Mangana
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					    <button class="dropdown-item" type="button">Action</button>
+					    <button class="dropdown-item" type="button">Another action</button>
+					    <button class="dropdown-item" type="button">Something else here</button>
+					  </div>
+					</div>
+		        </li>
+
+		        <li>
+		        	<div class="box p-2 shadow-sm" style="background: white; border-radius: 10px;">   
+			        
+			          <input type="search" id="search" placeholder="Tìm kiếm" class="border-0" style="width: 80%;" />
+			           <span class="icon float-right pl-2 mr-2" style="width: 15px; border-left: 1px solid #D3D3D3"><i class="fa fa-search"></i></span>
+			          <div style="clear: both;"></div>
+    				</div>
+		        </li>
+		        	
+		        <li>
+		        	<div class="btn" style="background:  #ff631c; color: white; border-radius: 8px"> Đăng nhập</div>
+		        </li>	
+		      </ul>
+
+
+   		</nav>
+   		
+
+   	</div>
+
+</div>
+
+              <style type="text/css">
+                #scroll_height::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#scroll_height::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #F5F5F5;
+}
+
+#scroll_height::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color:  #FF641D;
+}
+</style>
+
+<div class="container-fluid">
+	<div class="row m-0">
+
+
+		<div class="col-9 p-2">
+
+
+<div class="row m-0">
+	<div class="col-3 p-0 pr-2">
+        <img src="img/image_story/7.jpg" style="width: 100%; height: 300px; border-radius: 8px">    
+    </div>
+
+      <div class="col-9 p-0 pl-1">
+        <p class="m-0 font-weight-bold" style="font-size: 135%;line-height: 22px;">ẤU NỮ CHIẾN KÝ abcsaa</p>
+        <p style="font-size: 14px" class="m-0">Cật nhật - 08:50 12/06/2000</p>
+        <div style="width: 300px;">
+        <p class="font-weight-bold float-left m-0">Tác giả:</p>
+        <p class="float-right m-0" style="font-size: 90%">Huyền 022abc</p>
+        <div style="clear: both"></div>
+        <p class="font-weight-bold float-left m-0">Nhóm dịch:</p>
+        <p class="float-right m-0" style="font-size: 90%">Huyền 022abc</p>
+        <div style="clear: both"></div>
+        <p class="font-weight-bold float-left m-0">Tình trạng:</p>
+        <p class="float-right m-0" style="font-size: 90%">Đang tiến hành</p>
+        <div style="clear: both"></div>
+
+        <p class="m-0"><i class="m-0" style="font-size: 90%">270 Lượt xem&nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp   24 bình luận</i><p>
+
+        <div class="btn pt-1 pb-1 font-weight-bold m-0 float-left" style="font-size: 90%; background: #ff631c; color: white; border-radius: 8px">Bắt đầu đọc</div>
+        <div class="btn pt-1 pb-1  ml-2 font-weight-bold" style="background: #ff631c;  border-radius: 8px; font-size: 90%; color: white"><i class="fa fa-plus" aria-hidden="true"></i></div>
+        <div style="clear: left"></div>
+        </div>
+        
+      </div>
+</div>
+
+<div>
+  <p class="font-weight-bold m-0 mb-1 mt-3" style="font-size: 125%">Thể loại</p>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem fđ</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Hardsesdem</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">fHaremffg</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">cgarem</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harcfdfdm</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+   <a href=""><div class="btn font-weight-bold" style=" background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+</div>
+
+<div>
+	 <p class="font-weight-bold m-0 mb-1 mt-3" style="font-size: 125%">Nội dung</p>
+	 <p>
+	 	Một con bé loli tóc vàng, mắt xanh, da trắng như sứ, bay lượn trên tiền tuyến, trinh thám trên không, tên em nó là Tanya Degurechov. Nhưng con bé loli này, các bác đừng nhìn mặt mà bắt hình dong, vì sau này em nó sẽ trở thành một pháp sư nguy hiểm nhất của đế quốc.... Thân phận thật của con bé bá đạo này là gì, các bác theo dõi sẽ biết ngay :3
+Một em loli lạnh lùng, ham mê quyền lực tuyệt đối,.... đúng kiểu bác nào thích nhé :v
+Truyện rất hay, art đẹp, và sẽ có anime trong tương lại gần nhé!
+	 </p>
+</div>
+
+<style type="text/css">
+ 	tr td{
+ 		border-bottom: 1px solid #D3D3D3; 
+ 		padding: 8px;
+ 	}
+ 	tbody tr:hover{
+ 		color: white;
+ 		background: #ff631c;
+ 	}
+</style>
+<div>
+	 <p class="font-weight-bold m-0 mb-1 mt-3" style="font-size: 125%">Danh sách chương</p>
+	<table style="width: 100%;">
+	<thead>
+	  <tr>
+	    <th>Chương mới</th>
+	    <th>Cập nhật</th>
+	    <th>Lượt xem</th>
+	  </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+  <tr>
+    <td>Chương 55: Chiến trường đẫm máu</td>
+    <td>29 phút trước</td>
+    <td>94.000</td>
+  </tr>
+
+  </tbody>
+</table>
+<div class="text-center" style="margin: 0 auto; width: 100%"><a href="#" style="color: #ff631c; font-size: 120% ">Xem tất cả</a></div>
+</div>
+
+<style type="text/css">
+.media .avatar {
+    width: 64px;
+}
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+.orange-border .form-control:focus {
+    border: 1px solid #ff631c;
+    box-shadow: 0 0 0 0.2rem rgba(255, 99, 28, 1);
+}
+</style>
+
+<div>
+	 <p class="font-weight-bold m-0 mb-1 mt-3" style="font-size: 125%">Bình luận</p>
+	 <div class="media mt-3 shadow-textarea">
+      <img class="d-flex rounded-circle avatar z-depth-1-half mr-3" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg"
+        alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="m-0 font-weight-bold blue-text mb-1">Danny Tatuum</h5>
+        <div class="form-group basic-textarea rounded-corners orange-border">
+          <textarea class="form-control z-depth-1 shadow-sm" id="exampleFormControlTextarea345" rows="3" placeholder="Write your comment..."></textarea>
+          <button class="form-control z-depth-1 shadow-sm w-25 mt-2" style="background: white;">Đăng</button>
+        </div>
+      </div>
+    </div>
+
+	 <div class="media">
+  <img class="d-flex rounded-circle avatar z-depth-1-half mr-3" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg"
+    alt="Avatar">
+  <div class="media-body">
+    <h5 class="m-0 font-weight-bold blue-text">Anna Smith</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+    odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+    fringilla. Donec lacinia congue felis in faucibus.
+
+    <div class="media mt-3 shadow-textarea">
+      <img class="d-flex rounded-circle avatar z-depth-1-half mr-3" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg"
+        alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="m-0 font-weight-bold blue-text mb-1">Danny Tatuum</h5>
+        <div class="form-group basic-textarea rounded-corners orange-border">
+          <textarea class="form-control z-depth-1 shadow-sm" id="exampleFormControlTextarea345" rows="3" placeholder="Write your comment..."></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="media">
+  <img class="d-flex rounded-circle avatar z-depth-1-half mr-3" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg"
+    alt="Avatar">
+  <div class="media-body">
+    <h5 class="m-0 font-weight-bold blue-text">Caroline Horwitz</h5>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis odit minima eaque dignissimos recusandae
+    officiis commodi nulla est, tempore atque voluptas non quod maxime, iusto, debitis aliquid? Iure ipsum,
+    itaque.
+  </div>
+</div>
+</div>
+
+
+</div>		
+
+
+
+		<div class="col-3 p-0">
+			<div>
+				<p class="font-weight-bold m-0 mb-1 mt-3" style="font-size: 125%">Đề Xuất</p>
+
+				<div class="mb-2">
+                  <div class="row m-0 text-left " >
+                   
+                    <div class="post_story_box mb-2" style=" width: 100%; height: 165px">
+                       <div class=" shadow-sm" style="width: 100%;border-radius: 8px;">
+                     <div class="image_book_box float-left" style="width: 35%;">
+                       <img src="img/image_story/5.jpg" width="100%" height="165px" style="border-radius: 8px">
+                     </div>
+                     <div class="image_book_box pl-2 float-right" style="width: 65%;">
+
+                       <p class="title_story mb-0 font-weight-bold" style="font-size: 110%;margin-top: 5px;">Truyện Doraemon ggffgff dfdfdfd fdfdf</p>
+                       <p class="m-0" style="font-size: 100%">Chương 30</p>
+                       <div class="tag_box">
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                       
+                       </div>
+                       <p style="font-size: 85%" class="comment_story m-0 mt-2" >2360 lượt xem - 15 bình luận</p>
+                       
+                     </div>
+                     <div style="clear: both;"></div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="mb-2">
+                  <div class="row m-0 text-left " >
+                   
+                    <div class="post_story_box mb-2" style=" width: 100%; height: 165px">
+                       <div class=" shadow-sm" style="width: 100%;border-radius: 8px;">
+                     <div class="image_book_box float-left" style="width: 35%;">
+                       <img src="img/image_story/5.jpg" width="100%" height="165px" style="border-radius: 8px">
+                     </div>
+                     <div class="image_book_box pl-2 float-right" style="width: 65%;">
+
+                       <p class="title_story mb-0 font-weight-bold" style="font-size: 110%;margin-top: 5px;">Truyện Doraemon ggffgff dfdfdfd fdfdf</p>
+                       <p class="m-0" style="font-size: 100%">Chương 30</p>
+                       <div class="tag_box">
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                       
+                       </div>
+                       <p style="font-size: 85%" class="comment_story m-0 mt-2" >2360 lượt xem - 15 bình luận</p>
+                       
+                     </div>
+                     <div style="clear: both;"></div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="mb-2">
+                  <div class="row m-0 text-left " >
+                   
+                    <div class="post_story_box mb-2" style=" width: 100%; height: 165px">
+                       <div class=" shadow-sm" style="width: 100%;border-radius: 8px;">
+                     <div class="image_book_box float-left" style="width: 35%;">
+                       <img src="img/image_story/5.jpg" width="100%" height="165px" style="border-radius: 8px">
+                     </div>
+                     <div class="image_book_box pl-2 float-right" style="width: 65%;">
+
+                       <p class="title_story mb-0 font-weight-bold" style="font-size: 110%;margin-top: 5px;">Truyện Doraemon ggffgff dfdfdfd fdfdf</p>
+                       <p class="m-0" style="font-size: 100%">Chương 30</p>
+                       <div class="tag_box">
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                       
+                       </div>
+                       <p style="font-size: 85%" class="comment_story m-0 mt-2" >2360 lượt xem - 15 bình luận</p>
+                       
+                     </div>
+                     <div style="clear: both;"></div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="mb-2">
+                  <div class="row m-0 text-left " >
+                   
+                    <div class="post_story_box mb-2" style=" width: 100%; height: 165px">
+                       <div class=" shadow-sm" style="width: 100%;border-radius: 8px;">
+                     <div class="image_book_box float-left" style="width: 35%;">
+                       <img src="img/image_story/5.jpg" width="100%" height="165px" style="border-radius: 8px">
+                     </div>
+                     <div class="image_book_box pl-2 float-right" style="width: 65%;">
+
+                       <p class="title_story mb-0 font-weight-bold" style="font-size: 110%;margin-top: 5px;">Truyện Doraemon ggffgff dfdfdfd fdfdf</p>
+                       <p class="m-0" style="font-size: 100%">Chương 30</p>
+                       <div class="tag_box">
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                       
+                       </div>
+                       <p style="font-size: 85%" class="comment_story m-0 mt-2" >2360 lượt xem - 15 bình luận</p>
+                       
+                     </div>
+                     <div style="clear: both;"></div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="mb-2">
+                  <div class="row m-0 text-left " >
+                   
+                    <div class="post_story_box mb-2" style=" width: 100%; height: 165px">
+                       <div class=" shadow-sm" style="width: 100%;border-radius: 8px;">
+                     <div class="image_book_box float-left" style="width: 35%;">
+                       <img src="img/image_story/5.jpg" width="100%" height="165px" style="border-radius: 8px">
+                     </div>
+                     <div class="image_book_box pl-2 float-right" style="width: 65%;">
+
+                       <p class="title_story mb-0 font-weight-bold" style="font-size: 110%;margin-top: 5px;">Truyện Doraemon ggffgff dfdfdfd fdfdf</p>
+                       <p class="m-0" style="font-size: 100%">Chương 30</p>
+                       <div class="tag_box">
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                      <a href=""><div class="btn mt-1 font-weight-bold" style="font-size: 12px; background: #ff631c; color: white;padding: 0px 5px 0px 5px;">Harem</div></a>
+                       
+                       </div>
+                       <p style="font-size: 85%" class="comment_story m-0 mt-2" >2360 lượt xem - 15 bình luận</p>
+                       
+                     </div>
+                     <div style="clear: both;"></div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+
+          
+
+
+			</div>		
+		</div>
+		<!-- ------End---- -->
+	</div>
+</div>
+</body>
+</html>
